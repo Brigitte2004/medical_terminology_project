@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cuestionario: Muscle System</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+      .question {
+        margin-bottom: 20px;
+      }
+      .question p {
+        font-weight: bold;
+      }
+      .options label {
+        display: block;
+        margin: 5px 0;
+      }
+      .result {
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #f4f4f4;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      .correct {
+        color: green;
+      }
+      .incorrect {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Muscle System</h1>
+
+    <form id="quizForm">
+      <!-- Pregunta 1 -->
+      <div class="question">
+        <p>1. What is the basic functional unit of muscle contraction?</p>
+        <div class="img1">
+          <img src="https://i.imgur.com/DqYqFNW.jpeg" />
+        </div>
+        <div class="options">
+          <label><input type="radio" name="q1" value="a" /> a) Myofibril</label>
+          <label><input type="radio" name="q1" value="b" /> b) Sarcomere</label>
+          <label
+            ><input type="radio" name="q1" value="c" /> c) Neuromuscular
+            junction</label
+          >
+          <label><input type="radio" name="q1" value="d" /> d) Tendon</label>
+        </div>
+      </div>
+
+      <!-- Pregunta 2 -->
+      <div class="question">
+        <p>2. Which type of muscle is voluntary and attached to bones?</p>
+        <div class="img2">
+          <img src="https://i.imgur.com/Z2ljHSI.jpeg" />
+        </div>
+        <div class="options">
+          <label
+            ><input type="radio" name="q2" value="a" /> a) Smooth muscle</label
+          >
+          <label
+            ><input type="radio" name="q2" value="b" /> b) Cardiac muscle</label
+          >
+          <label
+            ><input type="radio" name="q2" value="c" /> c) Skeletal
+            muscle</label
+          >
+          <label
+            ><input type="radio" name="q2" value="d" /> d) Involuntary
+            muscle</label
+          >
+        </div>
+      </div>
+
+      <!-- Pregunta 3 -->
+      <div class="question">
+        <p>
+          3. What term describes the connection between a motor neuron and a
+          muscle fiber?
+        </p>
+        <div class="img3">
+          <img src="https://i.imgur.com/L9QFLw2.jpeg" />
+        </div>
+        <div class="options">
+          <label><input type="radio" name="q3" value="a" /> a) Sarcomere</label>
+          <label
+            ><input type="radio" name="q3" value="b" /> b) Neuromuscular
+            junction</label
+          >
+          <label><input type="radio" name="q3" value="c" /> c) Myofibril</label>
+          <label
+            ><input type="radio" name="q3" value="d" /> d) Motor unit</label
+          >
+        </div>
+      </div>
+
+      <!-- Pregunta 4 -->
+      <div class="question">
+        <p>4. Which muscle is primarily responsible for elbow flexion?</p>
+        <div class="img4">
+          <img src="https://i.imgur.com/hL8rNrW.jpeg" />
+        </div>
+        <div class="options">
+          <label
+            ><input type="radio" name="q4" value="a" /> a) Triceps
+            brachii</label
+          >
+          <label
+            ><input type="radio" name="q4" value="b" /> b) Biceps brachii</label
+          >
+          <label><input type="radio" name="q4" value="c" /> c) Deltoid</label>
+          <label
+            ><input type="radio" name="q4" value="d" /> d) Pectoralis
+            major</label
+          >
+        </div>
+      </div>
+
+      <!-- Pregunta 5 -->
+      <div class="question">
+        <p>5. Which muscle movement decreases the angle of a joint?</p>
+        <div class="img5">
+          <img src="https://i.imgur.com/tsVxo7R.jpeg" />
+        </div>
+        <div class="options">
+          <label><input type="radio" name="q5" value="a" /> a) Extension</label>
+          <label><input type="radio" name="q5" value="b" /> b) Abduction</label>
+          <label><input type="radio" name="q5" value="c" /> c) Flexion</label>
+          <label><input type="radio" name="q5" value="d" /> d) Rotation</label>
+        </div>
+      </div>
+
+      <!-- Pregunta 6 -->
+      <div class="question">
+        <p>
+          6. What type of muscle contraction maintains constant length while
+          increasing tension?
+        </p>
+        <div class="img6">
+          <img src="https://i.imgur.com/neblvUw.jpeg" />
+        </div>
+        <div class="options">
+          <label><input type="radio" name="q6" value="a" /> a) Isotonic</label>
+          <label><input type="radio" name="q6" value="b" /> b) Isometric</label>
+          <label
+            ><input type="radio" name="q6" value="c" /> c) Concentric</label
+          >
+          <label><input type="radio" name="q6" value="d" /> d) Eccentric</label>
+        </div>
+      </div>
+
+      <!-- Pregunta 7 -->
+      <div class="question">
+        <p>
+          7. Which muscle components are responsible for sliding during
+          contraction?
+        </p>
+        <div class="img7">
+          <img src="https://i.imgur.com/WiK3vTk.jpeg" />
+        </div>
+        <div class="options">
+          <label><input type="radio" name="q7" value="a" /> a) Fascia</label>
+          <label
+            ><input type="radio" name="q7" value="b" /> b) Actin and
+            Myosin</label
+          >
+          <label><input type="radio" name="q7" value="c" /> c) Tendon</label>
+          <label><input type="radio" name="q7" value="d" /> d) Ligament</label>
+        </div>
+      </div>
+
+      <!-- Pregunta 8 -->
+      <div class="question">
+        <p>8. Which movement takes a limb away from the midline of the body?</p>
+        <div class="img8">
+          <img src="https://i.imgur.com/Fauaex3.jpeg" />
+        </div>
+        <div class="options">
+          <label><input type="radio" name="q8" value="a" /> a) Adduction</label>
+          <label><input type="radio" name="q8" value="b" /> b) Abduction</label>
+          <label><input type="radio" name="q8" value="c" /> c) Flexion</label>
+          <label
+            ><input type="radio" name="q8" value="d" /> d) Supination</label
+          >
+        </div>
+      </div>
+
+      <!-- Pregunta 9 -->
+      <div class="question">
+        <p>
+          9. Which muscle is located in the back of the lower leg and involved
+          in plantar flexion?
+        </p>
+        <div class="img9">
+          <img src="https://i.imgur.com/ABO55mL.jpeg" />
+        </div>
+        <div class="options">
+          <label
+            ><input type="radio" name="q9" value="a" /> a) Quadriceps
+            femoris</label
+          >
+          <label
+            ><input type="radio" name="q9" value="b" /> b) Gastrocnemius</label
+          >
+          <label
+            ><input type="radio" name="q9" value="c" /> c) Hamstrings</label
+          >
+          <label
+            ><input type="radio" name="q9" value="d" /> d) Gluteus
+            maximus</label
+          >
+        </div>
+      </div>
+
+      <!-- Pregunta 10 -->
+      <div class="question">
+        <p>10. What term describes the increase in muscle size?</p>
+        <div class="options">
+          <label><input type="radio" name="q10" value="a" /> a) Atrophy</label>
+          <label
+            ><input type="radio" name="q10" value="b" /> b) Hypertrophy</label
+          >
+          <label><input type="radio" name="q10" value="c" /> c) Myalgia</label>
+          <label
+            ><input type="radio" name="q10" value="d" /> d) Tendinitis</label
+          >
+        </div>
+      </div>
+
+      <!-- Pregunta 11 -->
+      <div class="question">
+        <p>11. What is a tetanic contraction?</p>
+        <div class="options">
+          <label
+            ><input type="radio" name="q11" value="a" /> a) A brief, single
+            muscle contraction</label
+          >
+          <label
+            ><input type="radio" name="q11" value="b" /> b) A sustained
+            contraction without relaxation</label
+          >
+          <label
+            ><input type="radio" name="q11" value="c" /> c) A contraction where
+            the muscle lengthens</label
+          >
+          <label
+            ><input type="radio" name="q11" value="d" /> d) A contraction
+            without movement</label
+          >
+        </div>
+      </div>
+
+      <!-- Pregunta 12 -->
+      <div class="question">
+        <p>12. Which muscle is part of the back muscles?</p>
+        <div class="options">
+          <label
+            ><input type="radio" name="q12" value="a" /> a) Pectoralis
+            major</label
+          >
+          <label
+            ><input type="radio" name="q12" value="b" /> b) Trapezius</label
+          >
+          <label><input type="radio" name="q12" value="c" /> c) Deltoid</label>
+          <label
+            ><input type="radio" name="q12" value="d" /> d) Rectus
+            abdominis</label
+          >
+        </div>
+      </div>
+
+      <!-- Pregunta 13 -->
+      <div class="question">
+        <p>13. Which type of muscle is found in the walls of the heart?</p>
+        <div class="options">
+          <label
+            ><input type="radio" name="q13" value="a" /> a) Skeletal
+            muscle</label
+          >
+          <label
+            ><input type="radio" name="q13" value="b" /> b) Smooth muscle</label
+          >
+          <label
+            ><input type="radio" name="q13" value="c" /> c) Cardiac
+            muscle</label
+          >
+          <label
+            ><input type="radio" name="q13" value="d" /> d) Voluntary
+            muscle</label
+          >
+        </div>
+      </div>
+
+      <!-- Pregunta 14 -->
+      <div class="question">
+        <p>14. What is the main muscle that forms the buttocks?</p>
+        <div class="options">
+          <label
+            ><input type="radio" name="q14" value="a" /> a) Gluteus
+            maximus</label
+          >
+          <label
+            ><input type="radio" name="q14" value="b" /> b) Latissimus
+            dorsi</label
+          >
+          <label
+            ><input type="radio" name="q14" value="c" /> c) Hamstrings</label
+          >
+          <label
+            ><input type="radio" name="q14" value="d" /> d) Quadriceps
+            femoris</label
+          >
+        </div>
+      </div>
+
+      <!-- Pregunta 15 -->
+      <div class="question">
+        <p>15. What muscle injury refers to the tearing of muscle fibers?</p>
+        <div class="img15">
+          <img src="https://i.imgur.com/I30Lf9g.jpeg" />
+        </div>
+        <div class="options">
+          <label
+            ><input type="radio" name="q15" value="a" /> a) Muscle sprain</label
+          >
+          <label
+            ><input type="radio" name="q15" value="b" /> b) Muscle strain</label
+          >
+          <label
+            ><input type="radio" name="q15" value="c" /> c) Tendinitis</label
+          >
+          <label><input type="radio" name="q15" value="d" /> d) Myalgia</label>
+        </div>
+      </div>
+
+      <!-- Botón de enviar -->
+      <button type="button" onclick="checkAnswers()">Enviar respuestas</button>
+    </form>
+
+    <!-- Resultados -->
+    <div class="result" id="result">
+      <h2>Resultados:</h2>
+      <p id="score"></p>
+      <p id="feedback"></p>
+    </div>
+
+    <script>
+      // Respuestas correctas
+      const correctAnswers = {
+        q1: "b",
+        q2: "c",
+        q3: "b",
+        q4: "b",
+        q5: "c",
+        q6: "b",
+        q7: "b",
+        q8: "b",
+        q9: "b",
+        q10: "b",
+        q11: "b",
+        q12: "b",
+        q13: "c",
+        q14: "a",
+        q15: "b",
+      };
+
+      // Función para verificar respuestas
+      function checkAnswers() {
+        let score = 0;
+        let feedback = "";
+
+        for (let i = 1; i <= 15; i++) {
+          const questionName = `q${i}`;
+          const selectedAnswer = document.querySelector(
+            `input[name="${questionName}"]:checked`
+          );
+
+          if (selectedAnswer) {
+            if (selectedAnswer.value === correctAnswers[questionName]) {
+              score++;
+              feedback += `<p class="correct">Pregunta ${i}: Correcta</p>`;
+            } else {
+              feedback += `<p class="incorrect">Pregunta ${i}: Incorrecta (Respuesta correcta: ${correctAnswers[questionName]})</p>`;
+            }
+          } else {
+            feedback += `<p class="incorrect">Pregunta ${i}: No respondida</p>`;
+          }
+        }
+
+        // Mostrar resultados
+        document.getElementById(
+          "score"
+        ).innerText = `Puntuación: ${score} / 15`;
+        document.getElementById("feedback").innerHTML = feedback;
+      }
+    </script>
+  </body>
+</html>
